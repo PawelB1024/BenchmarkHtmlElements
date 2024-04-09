@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Paweł Bielecki" />
+        <title>Benchmark formularzy</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Benchmark formularzy</h1>
+        <hr />
+        <div class="center">
+            <div class="main">
+                <div class="input">
+                    Ile pól: <br /><input type="number" id="ile" /><br />
+                    <button onClick="run();">Odpal Benchmark</button>
+                </div>
+                <div id="container">
+                </div>
+            </div>
+            <div class="tabela">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Test</th>
+                        <th>Czas</th>
+                        <th>ilość na sekunde</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Tworzenie</td>
+                        <td id="tworzenieMs">0 ms</td>
+                        <td id="tworzenieSek">0</td>
+                    </tr>
+                    <tr>
+                        <td>Odczytywanie</td>
+                        <td id="odczytywanieMs">0 ms</td>
+                        <td id="odczytywanieSek">0</td>
+                    </tr>
+                    <tr>
+                        <td>Zapisywanie</td>
+                        <td id="zapisMs">0 ms</td>
+                        <td id="zapisSek">0</td>
+                    </tr>
+                    <tr>
+                        <td>Kasowanie</td>
+                        <td id="kasowanieMs">0 ms</td>
+                        <td id="kasowanieSek">0</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
